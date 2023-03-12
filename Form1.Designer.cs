@@ -35,6 +35,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.btnKmRecorridos = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numKmInicio)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numKmFin)).BeginInit();
             this.SuspendLayout();
@@ -67,13 +68,13 @@
             this.lblPrecio.ForeColor = System.Drawing.Color.Red;
             this.lblPrecio.Location = new System.Drawing.Point(485, 292);
             this.lblPrecio.Name = "lblPrecio";
-            this.lblPrecio.Size = new System.Drawing.Size(162, 30);
+            this.lblPrecio.Size = new System.Drawing.Size(108, 20);
             this.lblPrecio.TabIndex = 1;
             this.lblPrecio.Text = "RESULTADO";
             // 
             // btnCalcular
             // 
-            this.btnCalcular.Location = new System.Drawing.Point(318, 367);
+            this.btnCalcular.Location = new System.Drawing.Point(186, 360);
             this.btnCalcular.Name = "btnCalcular";
             this.btnCalcular.Size = new System.Drawing.Size(120, 35);
             this.btnCalcular.TabIndex = 2;
@@ -126,15 +127,26 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(152, 292);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(306, 30);
+            this.label3.Size = new System.Drawing.Size(204, 20);
             this.label3.TabIndex = 6;
             this.label3.Text = "CANTIDAD OBTENIDA (€):";
+            // 
+            // btnKmRecorridos
+            // 
+            this.btnKmRecorridos.Location = new System.Drawing.Point(475, 340);
+            this.btnKmRecorridos.Name = "btnKmRecorridos";
+            this.btnKmRecorridos.Size = new System.Drawing.Size(132, 75);
+            this.btnKmRecorridos.TabIndex = 7;
+            this.btnKmRecorridos.Text = "Muesta Kilometros";
+            this.btnKmRecorridos.UseVisualStyleBackColor = true;
+            this.btnKmRecorridos.Click += new System.EventHandler(this.btnKmRecorridos_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnKmRecorridos);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -160,6 +172,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btnKmRecorridos;
     }
 }
 

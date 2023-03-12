@@ -34,5 +34,20 @@ namespace PRACTICA_4._7_REPASO___AlquilerCoche
             lblPrecio.Text = $"El precio a pagar es: {precio.ToString("0.00")} €";
         }
 
+        private void btnKmRecorridos_Click(object sender, EventArgs e)
+        {
+            int kmInicio = Convert.ToInt32(numKmInicio.Value);
+            int kmFin = Convert.ToInt32(numKmFin.Value);
+
+            if (kmInicio >= kmFin)
+            {
+                MessageBox.Show("El valor de los Km de inicio no puede ser mayor que los km de finalización");
+                return;
+            }
+
+            int kmRecorridos = kmFin - kmInicio;
+
+            MessageBox.Show($"Los kilómetros recorridos son: {kmRecorridos}");
+        }
     }
 }
